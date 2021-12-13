@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>grist</Name>
+  <Repository>gristlabs/grist</Repository>
+  <Registry>https://hub.docker.com/r/gristlabs/grist</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://support.getgrist.com/</Support>
+  <Project>https://github.com/gristlabs/grist-core</Project>
+  <Overview>Grist is a modern relational spreadsheet. It combines the flexibility of a spreadsheet with the robustness of a database to organize your data and make you more productive.&#xD;
+&#xD;
+This repository, grist-core, is maintained by Grist Labs. Our flagship product, available at getgrist.com, is built from the code you see here, combined with business-specific software designed to scale it to many users, handle billing, etc.&#xD;
+&#xD;
+If you are looking to use Grist in the cloud, head on over to getgrist.com. If you are curious about where Grist is going heading, see our roadmap, drop a question in our forum, or browse our extensive documentation.</Overview>
+  <Category>Productivity: Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8484]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.getgrist.com/wp-content/uploads/2021/06/cropped-grist-transparent.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639422413</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8484" Default="8484" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8484</Config>
+  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/grist</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+</Container>
