@@ -16,19 +16,19 @@ This repository, grist-core, is maintained by Grist Labs. Our flagship product, 
 If you are looking to use Grist in the cloud, head on over to getgrist.com. If you are curious about where Grist is going heading, see our roadmap, drop a question in our forum, or browse our extensive documentation.</Overview>
   <Category>Productivity: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8484]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/bonedrums/unraid-templates/main/unraid-grist/grist.xml</TemplateURL>
   <Icon>https://www.getgrist.com/wp-content/uploads/2021/06/cropped-grist-transparent.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639422413</DateInstalled>
+  <DateInstalled>1645467185</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="WebUI" Target="8484" Default="8484" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8484</Config>
   <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/grist</Config>
-  <Config Name="Data" Target="/persist" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/grist/persist</Persist>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="Data" Target="/persist" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/grist/persist</Config>
 </Container>
