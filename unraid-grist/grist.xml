@@ -17,7 +17,7 @@ If you are looking to use Grist in the cloud, head on over to getgrist.com. If y
   <Category>Productivity: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8484]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/bonedrums/unraid-templates/main/unraid-grist/grist.xml</TemplateURL>
-  <Icon>https://www.getgrist.com/wp-content/uploads/2021/06/cropped-grist-transparent.png</Icon>
+  <Icon>https://community.getgrist.com/uploads/db2011/original/1X/f96a0e7ddbe6690c5fcb913ee25a7c99beab9250.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
