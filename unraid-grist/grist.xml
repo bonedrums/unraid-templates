@@ -9,11 +9,45 @@
   <Privileged>false</Privileged>
   <Support>https://support.getgrist.com/</Support>
   <Project>https://github.com/gristlabs/grist-core</Project>
-  <Overview>Grist is a modern relational spreadsheet. It combines the flexibility of a spreadsheet with the robustness of a database to organize your data and make you more productive.&#xD;
-&#xD;
-This repository, grist-core, is maintained by Grist Labs. Our flagship product, available at getgrist.com, is built from the code you see here, combined with business-specific software designed to scale it to many users, handle billing, etc.&#xD;
-&#xD;
-If you are looking to use Grist in the cloud, head on over to getgrist.com. If you are curious about where Grist is going heading, see our roadmap, drop a question in our forum, or browse our extensive documentation.</Overview>
+  <Overview>
+    <p><strong>Grist</strong> is a modern relational spreadsheet that combines the flexibility of a spreadsheet with the robustness of a database to organize your data and boost productivity.</p>
+    <p>This repository, <strong>grist-core</strong>, is maintained by <strong>Grist Labs</strong>. Our flagship product, available at <a href="https://getgrist.com">getgrist.com</a>, is built from the code you see here, combined with business-specific software designed to scale it to many users, handle billing, etc.</p>
+    <p><strong>Steps to Get Started:</strong></p>
+    <ol>
+      <li><strong>Explore Grist in the Cloud:</strong><br>Visit <a href="https://getgrist.com">getgrist.com</a> to use Grist online.</li>
+      <li><strong>Stay Updated:</strong><br>Check out our <a href="https://docs.getgrist.com/roadmap">roadmap</a> for future developments.</li>
+      <li><strong>Engage with the Community:</strong><br>Drop a question in our <a href="https://forum.getgrist.com">forum</a>.<br>Browse our extensive <a href="https://docs.getgrist.com">documentation</a>.</li>
+    </ol>
+    <p><strong>To use a Port other than 8484:</strong></p>
+    <p>In this example, we'll use port 9251:</p>
+    <p>Toggle Advanced View in the upper right-hand corner.</p>
+    <ol>
+      <li>Change WebUI: from <code>http://[IP]:[PORT:8484]/</code> to your desired port number, for example: <code>http://[IP]:[PORT:9251]/</code></li>
+      <li>Click <strong>Add another Path, Port, Variable, Label or Device</strong> at the bottom and add a Variable with the following:
+        <ul>
+          <li><strong>Config Type:</strong> Variable</li>
+          <li><strong>Name:</strong> Custom Port</li>
+          <li><strong>Key:</strong> PORT</li>
+          <li><strong>Value:</strong> 9251</li>
+        </ul>
+        Click <strong>Add</strong>.
+      </li>
+      <li>Click the <strong>Remove</strong> button for the Container Port.
+        <ul>
+          <li>Click <strong>Add another Path, Port, Variable, Label or Device</strong> at the bottom and add a Port with the following:</li>
+          <ul>
+            <li><strong>Config Type:</strong> Port</li>
+            <li><strong>Name:</strong> Container Port</li>
+            <li><strong>Container Port:</strong> 9251</li>
+            <li><strong>Host Port:</strong> 9251</li>
+          </ul>
+          Click <strong>Add</strong>.
+        </ul>
+      </li>
+    </ol>
+    <p>Click <strong>Apply</strong> to save.</p>
+    <p>Grist offers a blend of spreadsheet flexibility and database robustness to help you organize data effectively and enhance productivity.</p>
+  </Overview>
   <Category>Productivity: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8484]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/bonedrums/unraid-templates/main/unraid-grist/grist.xml</TemplateURL>
