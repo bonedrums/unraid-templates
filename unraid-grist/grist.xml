@@ -18,7 +18,7 @@ To use a Port other than 8484:&#xD;
 In this example we'll use port 9251&#xD;
 &#xD;
 1. Toggle Advanced View in upper right hand corner.&#xD;
-2. Change WebUI: from http://:/ to whatever your desired port number for example: http://:/&#xD;
+2. Change WebUI port number 8484 to your desired port number 9251&#xD;
 &#xD;
 3. Click Add another Path, Port, Variable, Label or Device at the bottom and add a Variable with the following:&#xD;
           Config Type: Variable&#xD;
